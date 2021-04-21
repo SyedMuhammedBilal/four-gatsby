@@ -27,8 +27,8 @@
 @media (max-width: 768px) {
   .logo {
     width: 30%;
-    height: 100%;
-    margin-left: 0%;
+    /* height: 100%; */
+    /* margin-left: 0%; */
     margin: -1%;
   }
 }
@@ -36,7 +36,6 @@
 @media (max-width: 550px) {
   .logo {
     width: 50%;
-    height: 92%;
     margin-left: 0%;
     margin: 0%;
   }
