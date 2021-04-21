@@ -21,7 +21,7 @@
 .active {
   background-color: #fff;
   transition: .4s all;
-  height: max-content;
+  /* height: auto; */
 }
 
 @media (max-width: 768px) {
