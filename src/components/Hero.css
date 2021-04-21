@@ -1,0 +1,21 @@
+.each-slide > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 350px;
+  }
+  
+  .each-slide img {
+    width: 100%;
+    height: 107vh;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  @media (min-width: 200px) and (max-width: 500px) {
+    .each-slide img {
+      width: 100vw;
+      height: 32vh;
+    }
+  }

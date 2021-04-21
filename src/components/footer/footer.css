@@ -1,0 +1,251 @@
+.footer-under {
+    margin-top: -3px;
+    font: 112.5%/1.45em;
+}
+
+.under {
+    background: url("../../images/curvy-footer.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0 Auto !important;
+    max-width: 100% !important;
+    color: #FFF !important;
+    padding: 3.0875rem 3.0875rem 3.45rem !important;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.rightCorner {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo2 {
+    margin-left: -3%;
+    object-fit: contain;
+}
+
+.medium {
+    color: #d6ca2b;
+}
+
+.atag {
+    font-weight: bold;
+    color: #FFF;
+    text-decoration: none;
+    padding-right: 3px;
+    /* padding-left: 3px; */
+}
+
+.footer p {}
+
+.footer p a {
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* @media (min-width: 200px) and (max-width: 500px) {
+    .footer-under {
+        margin-top: -4px;
+    }
+    .logo2 {
+        margin-left: -5%;
+        width: 20vh;
+    }
+} */
+
+.under {
+    background: url("../../images/curvy-footer.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0 Auto;
+    max-width: 100%;
+    color: #FFF;
+    padding: 9.0875rem 9.0875rem 9.45rem;
+}
+
+.c {
+    height: 2vh;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.leftConer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-start;
+}
+
+.logo2 {
+    width: 45vh;
+    height: 15vh;
+}
+
+.rightCorner {
+    display: flex;
+    flex-direction: row;
+    white-space: break-spaces;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 1000px) {
+    .under {
+        background: url("../../images/curvy-footer.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 100%;
+        overflow-x: hidden;
+        margin: 0 Auto !important;
+        max-width: 100% !important;
+        color: #FFF !important;
+        padding: 1.0875rem 1.0875rem 1.45rem !important;
+    }
+    .logo2 {
+        margin-left: -6%;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .rightCorner {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .footer-under {
+        background-color: #e34e8b;
+        opacity: 0.9;
+        margin-top: -1px;
+        font: 112.5%/1.45em;
+    }
+    .under {
+        background: url("../../images/curvy-footer.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 100%;
+        overflow-x: hidden;
+        margin: 0 Auto !important;
+        max-width: 100% !important;
+        color: #FFF !important;
+        padding: 0.0875rem 0rem 0rem !important;
+    }
+    .logo2 {
+        margin-left: -3%;
+        width: 41vh;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        padding: 6%;
+    }
+    .rightCorner {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .footer-under {
+        background-color: #e34e8b;
+        margin-top: -0.84px;
+        font: 112.5%/1.45em;
+    }
+    .under {
+        background: url("../../images/curvy-footer.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 100%;
+        overflow-x: hidden;
+        margin: 0 Auto !important;
+        max-width: 100% !important;
+        color: #FFF !important;
+        padding: 0.0875rem 0rem 0rem !important;
+    }
+    .logo2 {
+        margin-left: -6%;
+        height: 13vh;
+        width: 35vh;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        padding: 6%;
+    }
+    .rightCorner {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .under {
+        background: url("../../images/curvy-footer.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 100%;
+        overflow-x: hidden;
+        margin: 0 Auto !important;
+        max-width: 100% !important;
+        color: #FFF !important;
+        padding: 0.0875rem 0rem 0rem !important;
+    }
+    .logo2 {
+        margin-left: -5%;
+        width: 25vh;
+        height: 9vh;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-top: -14px;
+        margin-bottom: -34px;
+    }
+    .rightCorner {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* @media screen and (max-width: 500px) {
+    .under {
+        background: url("../../images/curvy-footer.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 100%;
+        overflow-x: hidden;
+        margin: 0 Auto !important;
+        max-width: 100% !important;
+        color: #FFF !important;
+        padding: 3.0875rem 3.0875rem 3.45rem !important;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .rightCorner {
+        display: flex;
+        flex-direction: row;
+    }
+} */
