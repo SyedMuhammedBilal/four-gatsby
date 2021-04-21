@@ -25,6 +25,13 @@
     flex-direction: column;
 }
 
+.leftConer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-start;
+}
+
 .rightCorner {
     display: flex;
     flex-direction: row;
@@ -56,15 +63,27 @@
     text-decoration: none;
 }
 
-/* @media (min-width: 200px) and (max-width: 500px) {
-    .footer-under {
-        margin-top: -4px;
-    }
+@media (min-width: 200px) and (max-width: 500px) {
+
     .logo2 {
-        margin-left: -5%;
-        width: 20vh;
+        width: 42vw;
     }
-} */
+
+    .leftConer {
+        padding-left: 10px;
+    }
+
+    .rightCorner {
+        padding-left: 10px;
+        font-size: 12px;
+    }
+
+    .footer-p {
+        padding-left: 10px;
+        margin-bottom: 5vh;
+        font-size: 12px;
+    }
+} 
 
 .under {
     background: url("../../images/curvy-footer.png");
@@ -88,13 +107,6 @@
     margin-top: 5%;
 }
 
-.leftConer {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    align-items: flex-start;
-}
-
 .logo2 {
     width: 45vh;
     height: 15vh;
@@ -110,7 +122,7 @@
 @media screen and (max-width: 1000px) {
     .under {
         background: url("../../images/curvy-footer.png");
-        background-size: 100%;
+        background-size: cover;
         background-repeat: no-repeat;
         height: 100%;
         overflow-x: hidden;
@@ -141,7 +153,7 @@
     }
     .under {
         background: url("../../images/curvy-footer.png");
-        background-size: 100%;
+        background-size: cover;
         background-repeat: no-repeat;
         height: 100%;
         overflow-x: hidden;
@@ -173,7 +185,7 @@
     }
     .under {
         background: url("../../images/curvy-footer.png");
-        background-size: 100%;
+        background-size: cover;
         background-repeat: no-repeat;
         height: 100%;
         overflow-x: hidden;
@@ -201,7 +213,7 @@
 @media screen and (max-width: 500px) {
     .under {
         background: url("../../images/curvy-footer.png");
-        background-size: 100%;
+        background-size: cover;
         background-repeat: no-repeat;
         height: 100%;
         overflow-x: hidden;
@@ -249,3 +261,18 @@
         flex-direction: row;
     }
 } */
+
+@media (min-width: 1024px) and (max-width: 1100px) {
+    .logo2 {
+        width: 35vw;
+        height: 12vh;
+    }   
+
+    .rightCorner {
+        font-size: 25px;
+    }
+
+    .footer-p {
+        font-size: 25px;
+    }
+}

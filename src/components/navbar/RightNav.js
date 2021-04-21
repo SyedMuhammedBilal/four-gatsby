@@ -37,6 +37,16 @@ function RightNav({ open, setOpen }) {
         setOpen(!open)
         navigate('/#2020')
     }, [setOpen])
+    
+    const handleInputChange = useCallback(open => {
+        setOpen(!open)
+        navigate('/#2019')
+    }, [setOpen])
+    
+    const handleAbout = useCallback(open => {
+        setOpen(!open)
+        navigate('/#about')
+    }, [setOpen])
     const [color, setColor] = useState(false);
     const [fill, setFill] = useState('#fff');
 
@@ -58,13 +68,13 @@ function RightNav({ open, setOpen }) {
     return (
 
         <Ul style={{ zIndex: "25" }} className="dropdown" open={open}>
-            <Link style={{textDecoration: 'none'}} to="/#about" onClick={() => handeInputChange}>
+            <a style={{textDecoration: 'none'}} onClick={() => navigate('#about'),handleAbout}>
                 <li style={{color: fill, transition: '.4s all'}} className="dropbtn">
                     About fourpercent
                 </li>
-            </Link>
+            </a>
             <div className="dropdown-content">
-                <Link to="/#2019" style={{ cursor: 'pointer', marginBottom: '2px' }} onClick={() => handeInputChange} > 2019</Link>
+                <a to="/#2019" style={{ cursor: 'pointer', marginBottom: '2px' }} onClick={() => navigate('/#2019'),handleInputChange} > 2019</a>
                 <a style={{ cursor: 'pointer' }} onClick={() => navigate('/#2020'), handeInputChange} >2020</a>
             </div>
             <Link to="/#contact" style={{textDecoration: 'none'}} onClick={() => navigate('/#contact'), handeInputChange}>

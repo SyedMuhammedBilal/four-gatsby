@@ -18,13 +18,12 @@ function Footer() {
                         <a className='medium' href="https://medium.com/@fourpercnt"> Medium</a>
                     </div>
 
-                    <p> Photography credit to <a href="https://instagram.com/mikebondsphotography"  > Mike Bonds </a></p>
-
+                    <p className="footer-p"> Photography credit to <a href="https://instagram.com/mikebondsphotography"  > Mike Bonds </a></p>
 
                 </div>
             </div>
         </div>
     )
-}
+};
 
 export default Footer
