@@ -100,28 +100,56 @@ const ContactFields = () => {
 
     return (
         <React.Fragment>
-            <form action="mailto:together@fourpercnt.com" method="POST" encType="multipart/form-data" className="form">
-                <div className="form__field-1">
-                    <div className="form__input-1">
-                        <label>First Name</label>
-                        <input onChange={handleChange} name="name" type="text" />
-                    </div>
-                    <div className="form__input-1">
-                        <label>Surname</label>
-                        <input onChange={handleChange} name="name" type="text" />
-                    </div>
+            <form action="mailto:together@fourpercnt.com" method="POST" encType="multipart/form-data" className="contact-form">
+                {/* <div className="form__field-1"> */}
+                    {/* <div className="form__input-1"> */}
+                        {/* <label>First Name</label> */}
+                        {/* <input onChange={handleChange} name="name" type="text" /> */}
+                    {/* </div> */}
+                    {/* <div className="form__input-1"> */}
+                        {/* <label>Surname</label> */}
+                        {/* <input onChange={handleChange} name="name" type="text" /> */}
+                    {/* </div> */}
+                {/* </div> */}
+                <div className="contact-name">
+                  <div className="contact-nameField">
+                    <label className="contact-label">First Name</label>
+                    <input className="contact-NameInput1" onChange={handleChange} name="name" type="text" />
+                  </div>
+                  <div className="contact-nameField">
+                    <label className="contact-label">Last Name</label>
+                    <input className="contact-NameInput2" onChange={handleChange} name="name" type="text" />
+                  </div>
                 </div>
-                <div className="form__field-2">
-                    <div className="form__input-2">
-                        <label>Email Address</label>
-                        <input onChange={handleChange} name="email" type="text" />
-                    </div>
-                    <div className="form__input-2">
-                        <label>Message</label>
-                        <textarea onChange={handleChange} name="message" type="text" />
-                    </div>
+
+
+                {/* <div className="form__field-2"> */}
+                    {/* <div className="form__input-2"> */}
+                        {/* <label>Email Address</label> */}
+                        {/* <input onChange={handleChange} name="email" type="text" /> */}
+                    {/* </div> */}
+                    {/* <div className="form__input-2"> */}
+                        {/* <label>Message</label> */}
+                        {/* <textarea onChange={handleChange} name="message" type="text" /> */}
+                    {/* </div> */}
+                {/* </div> */}
+                {/* <button onClick={formSubmit} className="contact__btn"> <Link style={{textDecoration: 'none', color: '#dd226e'}} to="/success">Submit</Link> </button> */}
+
+                <div>
+                  <div className="contact-nameField">
+                    <label className="contact-label">
+                      Email
+                    </label>
+                    <input onChange={handleChange} name="email" type="text" />
+                  </div>
+                  <div className="contact-nameField">
+                    <label className="contact-label">Message</label>
+                    <textarea onChange={handleChange} name="message" type="text" />
+                  </div>
                 </div>
-                <button onClick={formSubmit} className="contact__btn"> <Link style={{textDecoration: 'none', color: '#dd226e'}} to="/success">Submit</Link> </button>
+                <button onClick={formSubmit} className="submit-btn"> 
+                    <Link style={{textDecoration: 'none', color: '#dd226e'}} to="/success">Submit</Link> 
+                </button>
             </form>
         </React.Fragment>
     )
