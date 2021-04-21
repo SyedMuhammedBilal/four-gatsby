@@ -31,7 +31,7 @@ exports.handler = function(event, context, callback) {
         <h3>Email from ${data.name} ${data.email}<h3>
         <p>${data.message}<p>
       `
-  };
+  }
 
   transporter.sendMail(mailOptions, function(error, info){
     if(error){
