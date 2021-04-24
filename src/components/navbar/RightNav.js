@@ -79,8 +79,8 @@ function RightNav({ open, setOpen }) {
     return (
 
         <Ul style={{ zIndex: "25" }} className="dropdown" open={open}>
-            <a className="about-li" style={{textDecoration: 'none'}} onClick={() => navigate('#about'),handleAbout}>
-                <li  className="dropbtn">
+            <a className="about-li" style={{textDecoration: 'none'}}>
+                <li onClick={() => navigate('#about'),handleAbout} className="dropbtn">
                     About fourpercent
                 </li>
             </a>
@@ -88,8 +88,8 @@ function RightNav({ open, setOpen }) {
                 <a to="/#2019" style={{ cursor: 'pointer', marginBottom: '2px' }} onClick={() => navigate('/#2019'),handleInputChange} > 2019</a>
                 <a style={{ cursor: 'pointer' }} onClick={() => navigate('/#2020'), handeInputChange} >2020</a>
             </div>
-            <Link className="contact-li" to="/#contact" style={{textDecoration: 'none'}} onClick={() => navigate('/#contact'), handeInputChange}>
-                <li style={{color: fill, transition: '.4s all', cursor: 'pointer'}} className="lii">
+            <Link className="contact-li" to="/#contact" style={{textDecoration: 'none'}}>
+                <li onClick={() => navigate('/#contact'), handeInputChange} style={{color: fill, transition: '.4s all', cursor: 'pointer'}} className="lii">
                     Contact
                 </li>
             </Link>

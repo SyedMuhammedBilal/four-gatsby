@@ -172,3 +172,19 @@
     margin-left: -72%;
   }
 }
+
+@media (max-width: 320px) {
+  .dropbtn {
+    margin-left: 25px;
+  }
+
+  .dropdown-content {
+    margin-left: 15%;
+    margin-top: 7vh;
+  }
+
+  .contact-li {
+    margin-top: 22vh;
+    margin-left: -79%;
+  }
+}

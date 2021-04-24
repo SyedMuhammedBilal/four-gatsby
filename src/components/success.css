@@ -30,6 +30,7 @@
     background: transparent;
     border: none;
     color: #fff;
+    font-size: 15px;
     cursor: pointer;
     text-decoration: underline;
 }
