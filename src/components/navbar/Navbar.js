@@ -38,7 +38,7 @@ function Navbar() {
     return (
         <nav className={navbar ? 'header active' : 'header'} >
             {/* <div className="logo" ></div> */}
-            <img onClick={() => navigate('/')} style={{zIndex: '1', marginTop: '0px', cursor: 'pointer'}} src={Logo} className="logo" />
+            <img onClick={() => navigate('/')} style={{zIndex: '1', cursor: 'pointer'}} src={Logo} className="logo" />
             <Burger />
 
         </nav>

@@ -10,7 +10,7 @@ const Ul = styled.ul`
     margin-top: 0px;
     li{
         padding: 18px 18px;
-        color: rgb(232, 34, 117);
+        color: #fff;
         font-size: 20px;
         /* font-family: sans-serif; */
         font-weight: 400;
@@ -80,7 +80,7 @@ function RightNav({ open, setOpen }) {
 
         <Ul style={{ zIndex: "25" }} className="dropdown" open={open}>
             <a className="about-li" style={{textDecoration: 'none'}}>
-                <li onClick={() => navigate('#about'),handleAbout} className="dropbtn">
+                <li style={{color: fill}} onClick={() => navigate('#about'),handleAbout} className="dropbtn">
                     About fourpercent
                 </li>
             </a>

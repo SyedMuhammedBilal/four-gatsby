@@ -251,7 +251,7 @@ const Timeline = () => {
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        contentStyle={{ background: '#FFF', color: '#000' }}
+                        contentStyle={{ background: '#FFF', color: '#000', opacity: 0.75 }}
                         contentArrowStyle={{ borderRight: '7px solid  rgb(185 184 184)' }}
                         iconStyle={{ background: '#DD226E', color: '#fff' }}
                         position="right"

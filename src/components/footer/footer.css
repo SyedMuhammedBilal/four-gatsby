@@ -276,3 +276,9 @@
         font-size: 25px;
     }
 }
+
+@media (max-width: 320px) {
+    .footer-under {
+        margin-top: -1.84px;
+    }
+}
