@@ -24,7 +24,7 @@ const Ul = styled.ul`
         transform: ${({ open }) => open ? ' translateY(0%)' : 'translateY(-100%)'};
         top : -20px;
         right : 0 ;
-        min-height: 35vh;
+        min-height: 43vh;
     min-width: 100%;
         padding-top: 3.5rem;
         transition: transform 0.7s ease-in-out; 
