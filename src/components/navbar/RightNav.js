@@ -7,24 +7,22 @@ const Ul = styled.ul`
     list-style: none;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
     margin-top: 0px;
     li{
         padding: 18px 18px;
-        color: #fff;
+        color: rgb(232, 34, 117);
         font-size: 20px;
         /* font-family: sans-serif; */
         font-weight: 400;
     }
-    @media(max-width: 768px){
+    @media screen and (max-width: 768px){
         flex-flow: row;
         background-color: #e04b89;
         position: fixed;
         transform: ${({ open }) => open ? ' translateY(0%)' : 'translateY(-100%)'};
-        top : -20px;
+        top : -65px;
         right : 0 ;
-        min-height: 43vh;
+        min-height: 35vh;
     min-width: 100%;
         padding-top: 3.5rem;
         transition: transform 0.7s ease-in-out; 
@@ -33,6 +31,12 @@ const Ul = styled.ul`
             font-size: medium;
         }  
     }
+
+    
+        @media (min-width: 200px) and (max-width: 550px) {
+        min-height: 42vh;
+    }
+    
 `
 
 function RightNav({ open, setOpen }) {
@@ -50,7 +54,6 @@ function RightNav({ open, setOpen }) {
         setOpen(!open)
         navigate('/#about')
     }, [setOpen])
-    
     const handleContact = useCallback(open => {
         setOpen(!open)
         navigate('/#contact')
@@ -76,17 +79,20 @@ function RightNav({ open, setOpen }) {
     return (
 
         <Ul style={{ zIndex: "25" }} className="dropdown" open={open}>
+            <a className="about-li" style={{textDecoration: 'none'}} onClick={() => navigate('#about'),handleAbout}>
+                <li  className="dropbtn">
+                    About fourpercent
+                </li>
+            </a>
             <div className="dropdown-content">
-                <a to="/#2019" style={{ cursor: 'pointer', marginBottom: '2px' }} onClick={() => navigate('/#about'),handleAbout} > About</a>
-                <a style={{ cursor: 'pointer' }} onClick={() => navigate('/#2019'), handleInputChange} >2019</a>
+                <a to="/#2019" style={{ cursor: 'pointer', marginBottom: '2px' }} onClick={() => navigate('/#2019'),handleInputChange} > 2019</a>
                 <a style={{ cursor: 'pointer' }} onClick={() => navigate('/#2020'), handeInputChange} >2020</a>
-                <a style={{ cursor: 'pointer' }} onClick={() => navigate('/#contact'), handleContact} >Contact</a>
             </div>
-            {/* <Link to="/#contact" style={{textDecoration: 'none'}} onClick={() => navigate('/#contact'), handeInputChange}>
+            <Link className="contact-li" to="/#contact" style={{textDecoration: 'none'}} onClick={() => navigate('/#contact'), handeInputChange}>
                 <li style={{color: fill, transition: '.4s all', cursor: 'pointer'}} className="lii">
                     Contact
                 </li>
-            </Link> */}
+            </Link>
         </Ul>
 
 

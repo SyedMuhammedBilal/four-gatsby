@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { graphql, useStaticQuery } from 'gatsby'
+import '../success.css'
 
 const PinkBG = styled.div`
     background: #e34e8b;
@@ -13,7 +14,7 @@ const PinkBG = styled.div`
 const Description = styled.p `
     font-size: 16px;
     margin-top: 2vh;
-`
+`;
 
 const Blog = () => {
     const data = useStaticQuery(graphql`
@@ -57,7 +58,8 @@ const Blog = () => {
                 return (
                     <React.Fragment>
                         <h1> {node.title} </h1>
-                        <Description> {node.virtuals.subtitle} </Description>
+                        {/* <Description> {node.virtuals.subtitle} </Description> */}
+                        <a style={{color: '#fff', fontWeight: 500}} href="https://medium.com/@fourpercnt" target="_blank"> Read from our latest posts... </a>
                     </React.Fragment>
                 )
             })}

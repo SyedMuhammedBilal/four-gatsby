@@ -16,6 +16,16 @@
 
 }
 
+.success__background p {
+    color: #fff;
+    font-weight: 500;
+}
+
+.index_success a {
+    color: #fff;
+    font-weight:500;
+}
+
 .success-btn {
     background: transparent;
     border: none;

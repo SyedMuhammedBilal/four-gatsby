@@ -11,5 +11,5 @@ export const MissionData = {
 export const SuccessData = {
     title: 'Form has been submitted',
     description: 'Thank you! We will be in touch.',
-    buttonTitle: 'Back to home'
+    buttonTitle: 'Back to home',
 }
