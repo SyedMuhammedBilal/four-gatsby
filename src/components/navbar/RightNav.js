@@ -7,6 +7,8 @@ const Ul = styled.ul`
     list-style: none;
     display: flex;
     flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
     margin-top: 0px;
     li{
         padding: 18px 18px;
@@ -20,7 +22,7 @@ const Ul = styled.ul`
         background-color: #e04b89;
         position: fixed;
         transform: ${({ open }) => open ? ' translateY(0%)' : 'translateY(-100%)'};
-        top : -65px;
+        top : -20px;
         right : 0 ;
         min-height: 35vh;
     min-width: 100%;
@@ -48,6 +50,11 @@ function RightNav({ open, setOpen }) {
         setOpen(!open)
         navigate('/#about')
     }, [setOpen])
+    
+    const handleContact = useCallback(open => {
+        setOpen(!open)
+        navigate('/#contact')
+    }, [setOpen])
     const [color, setColor] = useState(false);
     const [fill, setFill] = useState('#fff');
 
@@ -69,20 +76,17 @@ function RightNav({ open, setOpen }) {
     return (
 
         <Ul style={{ zIndex: "25" }} className="dropdown" open={open}>
-            <a style={{textDecoration: 'none'}} onClick={() => navigate('#about'),handleAbout}>
-                <li style={{color: fill, transition: '.4s all'}} className="dropbtn">
-                    About fourpercent
-                </li>
-            </a>
             <div className="dropdown-content">
-                <a to="/#2019" style={{ cursor: 'pointer', marginBottom: '2px' }} onClick={() => navigate('/#2019'),handleInputChange} > 2019</a>
+                <a to="/#2019" style={{ cursor: 'pointer', marginBottom: '2px' }} onClick={() => navigate('/#about'),handleAbout} > About</a>
+                <a style={{ cursor: 'pointer' }} onClick={() => navigate('/#2019'), handleInputChange} >2019</a>
                 <a style={{ cursor: 'pointer' }} onClick={() => navigate('/#2020'), handeInputChange} >2020</a>
+                <a style={{ cursor: 'pointer' }} onClick={() => navigate('/#contact'), handleContact} >Contact</a>
             </div>
-            <Link to="/#contact" style={{textDecoration: 'none'}} onClick={() => navigate('/#contact'), handeInputChange}>
+            {/* <Link to="/#contact" style={{textDecoration: 'none'}} onClick={() => navigate('/#contact'), handeInputChange}>
                 <li style={{color: fill, transition: '.4s all', cursor: 'pointer'}} className="lii">
                     Contact
                 </li>
-            </Link>
+            </Link> */}
         </Ul>
 
 
