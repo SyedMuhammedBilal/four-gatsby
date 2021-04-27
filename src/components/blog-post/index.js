@@ -8,6 +8,7 @@ const PinkBG = styled.div`
     padding: 60px;
     color: #fff;
     margin-top: 10vh;
+    margin-bottom: 5vh;
     opacity: 0.9;
 `
 
@@ -59,7 +60,7 @@ const Blog = () => {
                     <React.Fragment>
                         <h1> {node.title} </h1>
                         {/* <Description> {node.virtuals.subtitle} </Description> */}
-                        <a style={{color: '#fff', fontWeight: 500}} href="https://medium.com/@fourpercnt" target="_blank"> Read from our latest posts... </a>
+                        <a style={{color: 'yellow', fontWeight: 500}} href="https://medium.com/@fourpercnt" target="_blank"> Read from our latest posts... </a>
                     </React.Fragment>
                 )
             })}

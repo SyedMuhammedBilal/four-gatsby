@@ -155,6 +155,7 @@
 @media (min-width: 200px) and (max-width: 500px) {
   .about-li {
     width: 100%;
+    margin-top: 10px;
   }
   
   .dropbtn {
@@ -164,10 +165,11 @@
   }
   .dropdown-content {
     margin-left: 22%;
+    margin-top: 13%;
   }
 
   .contact-li {
-    margin-top: 17vh;
+    margin-top: 19vh;
     margin-left: -72%;
   }
 }
@@ -187,7 +189,7 @@
   }
 
   .contact-li {
-    margin-top: 18vh;
+    margin-top: 21vh;
     margin-left: -76%;
   }
 
@@ -217,6 +219,7 @@
 @media (min-width: 512px) and (max-width: 595px) {
   .about-li {
     width: 100%;
+    margin-top: 10px;
   }
   
   .dropbtn {
@@ -238,6 +241,7 @@
 @media (min-width: 595px) and (max-width: 632px) {
   .about-li {
     width: 100%;
+    margin-top: 10px;
   }
   
   .dropbtn {
@@ -259,6 +263,7 @@
 @media (min-width: 632px) and (max-width: 679px) {
   .about-li {
     width: 100%;
+    margin-top: 10px;
   }
   
   .dropbtn {
