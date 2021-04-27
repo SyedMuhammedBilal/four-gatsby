@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import RightNav from './RightNav'
 import './Nav.css'
@@ -49,12 +49,18 @@ function Burger() {
   const changeBurgerColor = () => {
     if(window.scrollY >= 80) {  
       setBurger(true);
-      setColor('#e82275');
     } else {
       setBurger(false);
-      setColor('#fff');
     }
   }
+
+  useEffect(() => {
+    if(open === true) {
+      setColor('#fff');
+    } else {
+      setColor('#e82275')
+    }
+  })
 
   if(typeof window !== `undefined`) {
     window.addEventListener('scroll', changeBurgerColor);

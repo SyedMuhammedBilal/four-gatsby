@@ -23,7 +23,7 @@ const Ul = styled.ul`
         top : -65px;
         right : 0 ;
         min-height: 35vh;
-    min-width: 100%;
+        min-width: 100%;
         padding-top: 3.5rem;
         transition: transform 0.7s ease-in-out; 
         li{
@@ -32,8 +32,11 @@ const Ul = styled.ul`
         }  
     }
 
-    
-        @media (min-width: 200px) and (max-width: 550px) {
+    @media (min-width: 200px) and (max-width: 550px) {
+        min-height: 42vh;
+    }
+
+    @media (min-width: 550px) and (max-width: 768px) {
         min-height: 42vh;
     }
     

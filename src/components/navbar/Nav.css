@@ -2,7 +2,7 @@
   width: 16%;
   /* height: fit-content; */
   margin: 0%;
-  margin-left: 4%;
+  margin-left: 3%;
 }
 
 .contact-li {
@@ -13,7 +13,7 @@
 }
 .header {
   top: 0;
-  /* width:100%; */
+  width: -webkit-fill-available;
   height: 55px;
   /* border-bottom: 2px solid #f1f1f1; */
   padding:0 20px;
@@ -171,6 +171,134 @@
     margin-top: 17vh;
     margin-left: -72%;
   }
+}
+
+@media (min-width: 426px) and (max-width: 499px) {
+  .about-li {
+    width: 100%;
+  }
+  
+  .dropbtn {
+    margin-left: 60px;
+    color: fill; 
+    transition: .4s all;
+  }
+  .dropdown-content {
+    margin-left: 19%;
+  }
+
+  .contact-li {
+    margin-top: 18vh;
+    margin-left: -76%;
+  }
+
+}
+
+@media (min-width: 501px) and (max-width: 595px) {
+  .about-li {
+    width: 100%;
+  }
+  
+  .dropbtn {
+    margin-left: 60px;
+    color: fill; 
+    transition: .4s all;
+  }
+  .dropdown-content {
+    margin-left: 18%;
+  }
+
+  .contact-li {
+    margin-top: 19vh;
+    margin-left: -78%;
+  }
+
+}
+
+@media (min-width: 512px) and (max-width: 595px) {
+  .about-li {
+    width: 100%;
+  }
+  
+  .dropbtn {
+    margin-left: 60px;
+    color: fill; 
+    transition: .4s all;
+  }
+  .dropdown-content {
+    margin-left: 15%;
+  }
+
+  .contact-li {
+    margin-top: 20vh;
+    margin-left: -82%;
+  }
+
+}
+
+@media (min-width: 595px) and (max-width: 632px) {
+  .about-li {
+    width: 100%;
+  }
+  
+  .dropbtn {
+    margin-left: 60px;
+    color: fill; 
+    transition: .4s all;
+  }
+  .dropdown-content {
+    margin-left: 15%;
+  }
+
+  .contact-li {
+    margin-top: 20vh;
+    margin-left: -82%;
+  }
+
+}
+
+@media (min-width: 632px) and (max-width: 679px) {
+  .about-li {
+    width: 100%;
+  }
+  
+  .dropbtn {
+    margin-left: 60px;
+    color: fill; 
+    transition: .4s all;
+  }
+  .dropdown-content {
+    margin-top: 7%;
+    margin-left: 13%;
+  }
+
+  .contact-li {
+    margin-top: 19vh;
+    margin-left: -84%;
+  }
+
+}
+
+@media (min-width: 679px) and (max-width: 768px) {
+  .about-li {
+    width: 100%;
+  }
+  
+  .dropbtn {
+    margin-left: 60px;
+    color: fill; 
+    transition: .4s all;
+  }
+  .dropdown-content {
+    margin-left: 11%;
+    margin-top: 7%;
+  }
+
+  .contact-li {
+    margin-top: 19vh;
+    margin-left: -87%;
+  }
+
 }
 
 @media (max-width: 320px) {
