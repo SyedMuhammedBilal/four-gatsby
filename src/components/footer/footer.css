@@ -146,7 +146,7 @@
 
 @media screen and (max-width: 1500px) {
     .footer-under {
-        background-color: #e34e8b;
+        
         opacity: 0.9;
         margin-top: -1px;
         font: 112.5%/1.45em;
@@ -179,7 +179,7 @@
 
 @media screen and (max-width: 790px) {
     .footer-under {
-        background-color: #e34e8b;
+        
         margin-top: -0.84px;
         font: 112.5%/1.45em;
     }
