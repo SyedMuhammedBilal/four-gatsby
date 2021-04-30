@@ -5,7 +5,7 @@
     top: 0;
     color: #fff;
     font-weight: 200;
-    padding: 60px;
+    padding: 50px;
     margin-top: 27vh;
     margin-bottom: 15vh;
 }
@@ -37,6 +37,10 @@
 }
 
 @media (min-width: 200px) and (max-width: 500px) {
+    .success__background {
+        padding: 30px;
+    }
+
     .about__background {
         padding: 30px;
     }

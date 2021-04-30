@@ -57,7 +57,7 @@ const Navbox = styled.div`
     justify-content: flex-start;
     padding-top: 10vh;
     transition: all 0.3s ease-in;
-    top: 8vh;
+    top: 9vh;
     left: ${props => (props.open ? "-100%" : "0")};
   }
 `
