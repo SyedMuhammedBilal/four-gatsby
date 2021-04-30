@@ -54,25 +54,22 @@ const NavbarLink = ({ navbarOpen, setNavbarOpen }) => {
     const [color, setColor] = useState(false);
     const [fill, setFill] = useState('#fff');
 
-    const $handle2020 = useCallback(open => {
+    const handle2020 = useCallback(open => {
       navigate('/#2020')
-      setNavbarOpen(!navbarOpen)
+      setNavbarOpen(false)
     }, [setNavbarOpen])
 
-    const $handle2019 = () => {
+    const handle2019 = () => {
         navigate('/#2019')
-        if(navbarOpen === true) {
-          setNavbarOpen(false)
-        } 
-        
+        setNavbarOpen(!navbarOpen)
     }
 
-    const $handleAbout = useCallback(open => {
+    const handleAbout = useCallback(open => {
         navigate('/#about')
         setNavbarOpen(!navbarOpen)
     }, [setNavbarOpen])
     
-    const $handleContact = useCallback(open => {
+    const handleContact = useCallback(open => {
         navigate('/#contact')
         setNavbarOpen(!navbarOpen)
     }, [setNavbarOpen])
@@ -93,10 +90,10 @@ const NavbarLink = ({ navbarOpen, setNavbarOpen }) => {
 
   return (
     <>
-      <NavItem style={{color: '#fff', fontWeight: 600, display: 'flex'}} onClick={() => $handleAbout} to="/#about"> About</NavItem>
-      <NavItem style={{color: '#fff', fontWeight: 600, display: 'flex'}} onClick={() => $handle2020} to="/#2020"> 2020</NavItem>
-      <NavItem style={{color: '#fff', fontWeight: 600, display: 'flex'}} onClick={() => $handle2019} to="/#2019"> 2019</NavItem>
-      <NavItem style={{color: '#fff', fontWeight: 600, display: 'flex'}} onClick={() => $handleContact} to='/#contact'> Contact</NavItem>
+      <NavItem style={{color: '#fff', fontWeight: 600, display: 'flex'}} onClick={() => setNavbarOpen(!navbarOpen)} to="/#about"> About</NavItem>
+      <NavItem style={{color: '#fff', fontWeight: 600, display: 'flex'}} onClick={() => setNavbarOpen(!navbarOpen)} to="/#2020"> 2020</NavItem>
+      <NavItem style={{color: '#fff', fontWeight: 600, display: 'flex'}} onClick={() => setNavbarOpen(!navbarOpen)} to="/#2019"> 2019</NavItem>
+      <NavItem style={{color: '#fff', fontWeight: 600, display: 'flex'}} onClick={() => setNavbarOpen(!navbarOpen)} to='/#contact'> Contact</NavItem>
     </>
   )
 };
