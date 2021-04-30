@@ -29,6 +29,11 @@
   /* height: auto; */
 }
 
+.not-active {
+  background: transparent;
+  transition: .4s all;
+}
+
 @media (max-width: 768px) {
   .logo {
     width: 30%;

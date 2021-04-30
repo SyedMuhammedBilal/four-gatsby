@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Footer from './footer/footer'
-import Navbar from './navbar/Navbar'
+import Navbar from './Navbar'
 import { useStaticQuery, graphql } from "gatsby"
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
