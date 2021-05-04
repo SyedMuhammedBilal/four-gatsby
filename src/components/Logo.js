@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
+import { navigate } from 'gatsby'
 import $Logo from '../images/fourpercent-logo.png'
 
 const LogoWrap = styled.div`
@@ -29,7 +30,7 @@ const ImgLogo = styled.img`
 function Logo() {
     return (
         <LogoWrap>
-            <ImgLogo src={$Logo} alt="logo" />
+            <ImgLogo style={{cursor: 'pointer'}} onClick={() => navigate('/')} src={$Logo} alt="logo" />
         </LogoWrap>
     )
 }

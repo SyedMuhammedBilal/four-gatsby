@@ -25,7 +25,7 @@ const Success = () => {
                     {buttonTitle}
                 </button>
                 <br />
-                <h1>Together we are fourpercent</h1>
+                <h1 style={{color: 'yellow'}}>Together we are fourpercent</h1>
                 <a style={{color: 'yellow', fontWeight: 500}} href="https://medium.com/@fourpercnt" target="_blank"> Read from our latest posts... </a>
             </div>
             {/* <BlogPosts /> */}

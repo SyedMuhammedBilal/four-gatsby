@@ -9,18 +9,18 @@ import './navbar/Nav.css'
 const Navigation = styled.nav`
   height: 10vh;
   display: flex;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   width: 100%;
   justify-content: space-between;
   text-transform: uppercase;
   margin: 0 auto;
   padding: 0 5vw;
-  z-index: 2;
+  z-index: 9;
   align-self: center;
   @media (max-width: 768px) {
-    position: sticky;
-    height: 8vh;
+    position: fixed;
+    height: 7.5vh;
     top: 0;
     left: 0;
     right: 0;
