@@ -3,6 +3,7 @@ import { Button } from './Button';
 import NavbarLinks from "./NavbarLinks"
 import Logo from "./Logo"
 import styled from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 import { Link, navigate} from 'gatsby';
 import './navbar/Nav.css'
 
@@ -18,8 +19,8 @@ const Navigation = styled.nav`
   padding: 0 5vw;
   z-index: 9;
   align-self: center;
+  position: fixed;
   @media (max-width: 768px) {
-    position: fixed;
     height: 7.5vh;
     top: 0;
     left: 0;
@@ -53,12 +54,16 @@ const Navbox = styled.div`
     position: fixed;
     width: 100%;
     background-color: #e82275;
-  color: black;
+    color: black;
     justify-content: flex-start;
     padding-top: 10vh;
     transition: all 0.3s ease-in;
-    top: 9vh;
+    top: 8.5vh;
     left: ${props => (props.open ? "-100%" : "0")};
+  }
+
+  @media (min-width: 200px) and (max-width: 768px) {
+    top: 7.3vh;
   }
 `
 
@@ -91,6 +96,18 @@ const Hamburger = styled.div`
   }
 `
 
+const GlobalStyle = createGlobalStyle`
+  body {
+    overflow: hidden;
+  }
+`
+
+const GlobalStyle02 = createGlobalStyle`
+  body {
+    overflow: visible;
+  }
+`
+
 const Navbar = () => {
     const [navbarOpen, setNavbarOpen] = useState(false)
     const [navbar, setNavbar] = useState(false);
@@ -114,7 +131,7 @@ const Navbar = () => {
           navbarOpen={navbarOpen}
           onClick={() => setNavbarOpen(!navbarOpen)}
         >
-          {navbarOpen ? <Hamburger open /> : <Hamburger />}
+          {navbarOpen ? <> <GlobalStyle /> <Hamburger open /> </> : <> <GlobalStyle02 />  <Hamburger /> </> }
         </Toggle>
         {navbarOpen ? (
           <Navbox>

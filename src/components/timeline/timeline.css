@@ -2,8 +2,8 @@
     /* font-size: 17px; */
     /* font-weight: 600; */
     font-size: 23px;
-    margin-top: 32%;
-    margin-left: -23%;
+    margin-top: 24%;
+    margin-left: -24%;
     /* text-align: center;
     margin-top: 12%;
     margin-left: -20%; */
@@ -14,8 +14,8 @@
   @media screen and (max-width: 1168px) {
     .h1 {
       /* font-weight: 600; */
-      margin-top: 23%;
-      margin-left: 10%;
+      margin-top: 20%;
+      margin-left: 15%;
       font-size: 15px;
       /* font-size: 22px;
       margin-top: 0%;
