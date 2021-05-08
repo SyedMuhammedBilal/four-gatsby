@@ -277,6 +277,7 @@
 }
 
 .vertical-timeline-element-content p {
+    font-family: 'Quicksand', sans-serif;
     margin: 1em 0 0;
     line-height: 1.6
 }

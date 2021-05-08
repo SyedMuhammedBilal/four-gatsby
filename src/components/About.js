@@ -17,7 +17,7 @@ const About = () => {
 
 const NewLineText = (props) => {
     const text = props.desc;
-    const newText = text.split('\n').map(str => <p style={{fontWeight: 600}} className="about__desc"> {str} </p>)
+    const newText = text.split('\n').map(str => <p style={{fontWeight: 500}} className="about__desc"> {str} </p>)
 
     return newText;
 };
