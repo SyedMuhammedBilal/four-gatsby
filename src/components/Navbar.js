@@ -21,11 +21,15 @@ const Navigation = styled.nav`
   align-self: center;
   position: fixed;
   @media (max-width: 768px) {
-    height: 7.5vh;
+    height: 3.5rem;
     top: 0;
     left: 0;
     right: 0;
     left: 0;
+  }
+
+  @media (min-width: 769px) and (max-width: 2500px) {
+    height: 4rem;
   }
 `
 

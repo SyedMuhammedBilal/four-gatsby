@@ -112,6 +112,13 @@
     height: 15vh;
 }
 
+@media (min-width: 769px) and (max-width: 2500px){
+    .logo2 {
+        width: 32vh;
+        height: 15vh;
+    }
+}
+
 .rightCorner {
     display: flex;
     flex-direction: row;
@@ -164,7 +171,7 @@
     }
     .logo2 {
         margin-left: -3%;
-        width: 44%;
+        width: 48%;
     }
     .footer {
         display: flex;

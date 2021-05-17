@@ -91,8 +91,8 @@ const NavbarLink = ({ navbarOpen, setNavbarOpen }) => {
   return (
     <>
       <NavItem style={{color: '#fff', fontWeight: 600, display: 'flex'}} onClick={() => setNavbarOpen(!navbarOpen)} to="/#about"> About</NavItem>
-      <NavItem style={{color: 'yellow', fontWeight: 600, display: 'flex'}} onClick={() => setNavbarOpen(!navbarOpen)} to="/#2019"> 2019</NavItem>
-      <NavItem style={{color: 'yellow', fontWeight: 600, display: 'flex'}} onClick={() => setNavbarOpen(!navbarOpen)} to="/#2020"> 2020</NavItem>
+      <NavItem style={{color: 'yellow', display: 'flex'}} onClick={() => setNavbarOpen(!navbarOpen)} to="/#2019"> 2019</NavItem>
+      <NavItem style={{color: 'yellow', display: 'flex'}} onClick={() => setNavbarOpen(!navbarOpen)} to="/#2020"> 2020</NavItem>
       <NavItem style={{color: '#fff', fontWeight: 600, display: 'flex'}} onClick={() => setNavbarOpen(!navbarOpen)} to='/#contact'> Contact</NavItem>
     </>
   )

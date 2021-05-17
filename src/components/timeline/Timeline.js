@@ -15,11 +15,11 @@ const Timeline = () => {
                     overflowX: 'hidden'
                 }}
             >
-                <div id="2019"></div>
+                <div style={{height: '6vh'}} id="2019"></div>
                 <VerticalTimeline>
                     <VerticalTimelineElement
                         className="cont"
-
+                        
                         icon={
                             <h1 className="h1" style={{fontSize: '20px', fontWeight: 400, fontFamily: 'sans-serif'}}>2019</h1>}
 
@@ -84,9 +84,9 @@ const Timeline = () => {
                             Founding members back the idea, private social group created.
           </p>
                     </VerticalTimelineElement>
-                    <div id="2020"></div>
+                    <div style={{height: '4vh'}} id="2020"></div>
                     <VerticalTimelineElement
-
+                    
                         //  iconStyle={{ background: '#DD226E', width: '78px', height: '40px', borderRadius: '0%', marginLeft: '-5%', textAlign: 'center' }}
                         icon={
                             <h1 className="h1" style={{fontSize: '20px', fontWeight: 400, fontFamily: 'sans-serif'}}>2020</h1>}

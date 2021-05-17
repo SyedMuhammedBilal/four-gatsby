@@ -97,3 +97,20 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+
+There is something my partner brought up yesterday that I didn't realize when you changed the entire header navigation. 
+
+Our floating menu that was part of our initial design is gone. It was the one element that stood us out different from any responsive landing page. 
+
+We have a question for you, 
+
+How hard is it for you to show the original floating menu on landing page but once user scrolls down the site the sticky header shows up as is? 
+
+Let us know if it's doable. 
+
+For the next round of revisions. We looked over all the tasks that weren't completed from earlier revisions and didn't notice till yesterday. Under tab "Revision 7" you will see a new column that shows you when this task was first assigned and not been applied. Along with a few CSS fixes for this round. 
+
+I know you are tired working on this gig. So are we. 
+
+https://docs.google.com/spreadsheets/d/17lG-LSawxheENZk3RtUYwfhcVaLfCx-hfC2E0McRZxg/edit?usp=drivesdk

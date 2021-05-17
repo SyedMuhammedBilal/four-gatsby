@@ -144,15 +144,15 @@
     }
     .vertical-timeline-element:first-child {
         width: 76px !important;
-        height: 44px !important;
+        height: 42px !important;
         left: 46.7%;
         text-align: center;
         background-color: #dd226e;
     }
     .vertical-timeline-element:nth-child(7) {
-        width: 65px !important;
-        height: 40px !important;
-        left: 47.5%;
+        width: 76px !important;
+        height: 42px !important;
+        left: 46.7%;
         text-align: center;
         background-color: #dd226e;
     }
