@@ -10,15 +10,19 @@ function Footer() {
                     <div className="leftConer" >
                         <img className="logo2" src={Logo} />
                     </div>
-                    <div className='rightCorner'>
+                    {/* <div className='rightCorner'>
                         <a className="atag" href="https://www.linkedin.com/company/fourpercnt">Linkedin </a>
                         |
                         <a className="atag" href="https://angel.co/company/fourpercnt"> Angelist </a>
                         |
                         <a className='medium' href="https://medium.com/@fourpercnt"> Medium</a>
+                    </div> */}
+                    <div className="footer-flex">
+                    <p >@{new Date().getFullYear()} fourpercent Inc. All rights reserved</p>
+                    <p className="footer-credit"> Photography credit to<a href="https://instagram.com/mikebondsphotography" style={{marginLeft: '5px'}}> Mike Bonds </a></p>
+                    
                     </div>
-
-                    <p className="footer-p"> Photography credit to <a href="https://instagram.com/mikebondsphotography"  > Mike Bonds </a></p>
+                    
 
                 </div>
             </div>
